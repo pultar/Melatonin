@@ -2,10 +2,9 @@
 //  MelatoninApp.swift
 //  Melatonin
 //
-//  Created by Felix Pultar on 02.12.2024.
-//
 
 import SwiftUI
+import SwiftData
 
 @main
 struct MelatoninApp: App {
@@ -13,5 +12,6 @@ struct MelatoninApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Computer.self)
     }
 }
