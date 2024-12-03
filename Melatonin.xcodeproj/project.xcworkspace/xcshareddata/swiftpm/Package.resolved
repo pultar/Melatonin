@@ -1,0 +1,15 @@
+{
+  "originHash" : "07f98f559f8bb4c50af4c8609424702ce511433ddaaff08c7cff111c7b993745",
+  "pins" : [
+    {
+      "identity" : "wakeonlan",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pultar/WakeOnLAN.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "18f4c48345a55b509fed14b9cdad6c5b14f3f90e"
+      }
+    }
+  ],
+  "version" : 3
+}

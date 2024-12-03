@@ -45,14 +45,16 @@ struct ComputerView: View {
                     }
             }
             .navigationTitle("Computer")
+            #if !os(macOS)
             .navigationBarTitleDisplayMode(.inline)
+            #endif
             HStack {
                 Button("Wake Up") {
                     guard validateInputs() else {
                         errorMessage = "Cannot wake up computer with invalid parameters."
                         return
                     }
-                    let result = WakeOnLAN.sendWakeOnLAN(macAddress: computer.macAddress)
+                    let result = sendWakeOnLAN(macAddress: computer.macAddress)
                     print(result)
                 }
                 .buttonStyle(.borderedProminent)
@@ -70,6 +72,7 @@ struct ComputerView: View {
                 deleteComputer()
             }
         }
+        .padding()
     }
     
     private func saveChanges() {

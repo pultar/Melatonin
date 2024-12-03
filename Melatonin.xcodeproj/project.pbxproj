@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC39C2A32CFF2A9E0043DAAB /* WakeOnLAN in Frameworks */ = {isa = PBXBuildFile; productRef = DC39C2A22CFF2A9E0043DAAB /* WakeOnLAN */; };
 		DCD62B792CFDCEC4008B0454 /* WakeOnLAN in Frameworks */ = {isa = PBXBuildFile; productRef = DCD62B782CFDCEC4008B0454 /* WakeOnLAN */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCD62B792CFDCEC4008B0454 /* WakeOnLAN in Frameworks */,
+				DC39C2A32CFF2A9E0043DAAB /* WakeOnLAN in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +73,7 @@
 			name = Melatonin;
 			packageProductDependencies = (
 				DCD62B782CFDCEC4008B0454 /* WakeOnLAN */,
+				DC39C2A22CFF2A9E0043DAAB /* WakeOnLAN */,
 			);
 			productName = Melatonin;
 			productReference = DCD62B5C2CFDCE6B008B0454 /* Melatonin.app */;
@@ -101,7 +104,7 @@
 			mainGroup = DCD62B532CFDCE6B008B0454;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				DCD62B772CFDCEC4008B0454 /* XCLocalSwiftPackageReference "../../../Desktop/WakeOnLAN" */,
+				DC39C2A12CFF2A9E0043DAAB /* XCRemoteSwiftPackageReference "WakeOnLAN" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DCD62B5D2CFDCE6B008B0454 /* Products */;
@@ -277,6 +280,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ai.fxp.Melatonin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,6 +315,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ai.fxp.Melatonin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -336,14 +349,23 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		DCD62B772CFDCEC4008B0454 /* XCLocalSwiftPackageReference "../../../Desktop/WakeOnLAN" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../Desktop/WakeOnLAN;
+/* Begin XCRemoteSwiftPackageReference section */
+		DC39C2A12CFF2A9E0043DAAB /* XCRemoteSwiftPackageReference "WakeOnLAN" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pultar/WakeOnLAN.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DC39C2A22CFF2A9E0043DAAB /* WakeOnLAN */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC39C2A12CFF2A9E0043DAAB /* XCRemoteSwiftPackageReference "WakeOnLAN" */;
+			productName = WakeOnLAN;
+		};
 		DCD62B782CFDCEC4008B0454 /* WakeOnLAN */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WakeOnLAN;
